@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker Tailwind</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-gray-200 mx-auto w-[80%]">
+    <!-- DASHBOARD -->
+
+<div class="bg-white p-6 rounded-lg mb-5">
+
+    <h1 class="text-xl font-bold mb-4">
+       Job Application Tracker
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+       <div class="bg-gray-50 p-4 rounded">
+
+        <p>Total</p>
+
+        <p id="total" class="text-xl font-bold text-blue-600">0</p>
+
+       </div>
+
+
+      <div class="bg-gray-50 p-4 rounded">
+
+        <p>Interview</p>
+
+        <p id="interviewCount" class="text-xl font-bold text-green-600">0</p>
+ 
+      </div>
+
+
+      <div class="bg-gray-50 p-4 rounded">
+
+      <p>Rejected</p>
+
+      <p id="rejectedCount" class="text-xl font-bold text-red-600">0</p>
+
+      </div>
+
+
+    </div>
+
+</div>
 </body>
 </html>
